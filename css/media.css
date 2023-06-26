@@ -2,6 +2,10 @@
   .container {
     max-width: 426px;
   }
+
+  .footer-subscribe-frame {
+    min-width: 396px;
+  }
 }
 /* ----------------------------------------------------tab */
 @media screen and (min-width: 768px) {
@@ -43,7 +47,45 @@
   .customers-item:nth-child(n + 4) {
     margin-top: 52px;
   }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    max-width: 582px;
+    gap: 24px;
+  }
+  .footer-logo {
+    display: block;
+    margin-right: auto;
+  }
+
+  .footer-subscribe-frame {
+    gap: 24 px;
+    flex-direction: row;
+    margin-top: 56px;
+    min-width: 453px;
+  }
+
+  .footer-subscribe-form {
+    width: 264px;
+  }
+  .footer-subscribe-label {
+    display: block;
+    margin-left: auto;
+  }
+  .footer-subscribe-btn {
+    min-width: 165px;
+    /* margin: 0; */
+  }
 }
+/* ------------------------------------------Cross position */
+
+/* @media screen and (min-width: 319px) and (max-width: 767px) {
+  .customers-item:nth-child(n + 3) {
+    margin-top: 56px;
+  }
+} */
+
 /* ------------------------------------------------Desctop */
 @media screen and (min-width: 1158px) {
   .container {
@@ -114,5 +156,35 @@
   }
   .customers-item:nth-child(n + 3) {
     margin-top: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+  }
+  .footer-logo-frame {
+    margin-right: 120px;
+    display: block;
+  }
+  .footer-soc-frame {
+    margin-right: 80px;
+  }
+  .footer-soc-text {
+    text-align: start;
+  }
+  .footer-subscribe-frame {
+    gap: 0;
+    flex-direction: row;
+  }
+  .footer-subscribe-label {
+    display: block;
+  }
+  .footer-subscribe-input {
+    width: 264px;
+  }
+  .footer-subscribe-btn {
+    min-width: 165px;
+    /* margin: 0; */
   }
 }
