@@ -1,0 +1,118 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 426px;
+  }
+}
+/* ----------------------------------------------------tab */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 766px;
+  }
+  .advtg-list {
+    gap: 24px;
+  }
+
+  .advtg-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .advtg-title {
+    line-height: 1.11;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .team-card:first-child,
+  .team-card:nth-child(2) {
+    margin-bottom: 40px;
+  }
+  .customers .container {
+    max-width: 582px;
+  }
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .customers-item:nth-child(n + 3) {
+    margin-top: 0;
+  }
+  .customers-item:nth-child(n + 4) {
+    margin-top: 52px;
+  }
+}
+/* ------------------------------------------------Desctop */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .advtg {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .advtg-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .advtg-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    margin-bottom: 8px;
+  }
+  .advtg-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .adtvg-icon-bg {
+    display: flex;
+  }
+  .advtg-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .wedoing {
+    display: flex;
+  }
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .team-card {
+    width: calc((100% - 72px) / 4);
+  }
+  .team-card:first-child,
+  .team-card:nth-child(2) {
+    margin-bottom: 0px;
+  }
+  .customers .container {
+    max-width: 1158px;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .customers-item:nth-child(n + 3) {
+    margin-top: 0;
+  }
+}

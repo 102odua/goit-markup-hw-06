@@ -38,10 +38,9 @@ ul {
 }
 
 .container {
-  width: 1158px;
+  /* width: 1158px; */
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
 }
 img {
   display: block;
@@ -219,8 +218,8 @@ img {
 }
 /* -------section advantage ps hide h2 -------*/
 .advtg {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .adtvg-icon-bg {
   background-color: var(--light-color);
@@ -231,20 +230,22 @@ img {
   justify-content: center;
   height: 112px;
   border-radius: 4px;
+  display: none;
 }
 .advtg-icon {
   width: 100%;
 }
 .advtg-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 .advtg-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 .advtg-title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -252,11 +253,13 @@ img {
 }
 .advtg-text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 /* -----------section we doing-------------- */
 .wedoing {
+  display: none;
   padding-bottom: 120px;
 }
 .wedoing-title {
@@ -277,7 +280,7 @@ img {
 /* -----------section team------------------ */
 .team {
   background-color: var(--light-color);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .team-container {
 }
@@ -294,14 +297,17 @@ img {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 .team-card {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
   background-color: var(--white-bg-color);
-  width: calc((100% - 72px) / 4);
+  width: 264px;
+
   border-radius: 0px 0px 4px 4px;
 }
 .team-container-text {
@@ -358,10 +364,10 @@ img {
 
 /* ------------------customers------------------- */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.container {
+.customers .container {
 }
 .customers-title {
   font-weight: 700;
@@ -375,11 +381,15 @@ img {
 }
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
+}
+.customers-item:nth-child(n + 3) {
+  margin-top: 56px;
 }
 .customers-link {
   width: 100%;
