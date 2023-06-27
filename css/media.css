@@ -25,13 +25,10 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
     justify-content: center;
   }
-  .team-card:first-child,
-  .team-card:nth-child(2) {
-    margin-bottom: 40px;
-  }
+
   .customers .container {
     max-width: 582px;
   }
@@ -41,12 +38,7 @@
   .customers-item {
     width: calc((100% - 48px) / 3);
   }
-  .customers-item:nth-child(n + 3) {
-    margin-top: 0;
-  }
-  .customers-item:nth-child(n + 4) {
-    margin-top: 52px;
-  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,10 +127,7 @@
   .team-card {
     width: calc((100% - 72px) / 4);
   }
-  .team-card:first-child,
-  .team-card:nth-child(2) {
-    margin-bottom: 0px;
-  }
+
   .customers .container {
     max-width: 1158px;
   }
@@ -154,9 +143,7 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-  .customers-item:nth-child(n + 3) {
-    margin-top: 0;
-  }
+
   .footer-container {
     display: flex;
     flex-direction: row;
