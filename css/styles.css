@@ -71,13 +71,16 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
+.nav-item {
+  display: none;
+}
 .nav-menu {
-  display: flex;
-  align-items: center;
 }
-
+.contacts {
+  display: none;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -92,72 +95,77 @@ img {
 .header-span {
   color: var(--main-color);
 }
-
-.nav-item {
+.mob-menu {
+  padding-left: 40px;
+}
+.close-menu-btn {
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent-color);
+  border: 1px solid #0000001a;
+  border-radius: 50%;
   display: flex;
-  max-width: 261px;
+  align-items: center;
+  justify-content: center;
+}
+.mob-menu-list {
+  display: flex;
+  flex-direction: column;
   gap: 40px;
+  margin-bottom: 264px;
 }
 
-.nav-link {
-}
-
-.nav-link-item {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.mob-menu-link {
   color: var(--main-color);
-  padding: 24px 0;
-  display: block;
-  transition: color var(--transition-auto);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
 }
-
-.nav-link-item:hover,
-.nav-link-item:focus {
+.current {
   color: var(--pressed-color);
 }
-
-.contacts {
-  font-style: normal;
-  margin-left: auto;
+.mob-menu-contacts {
+  margin-bottom: 48px;
 }
-
-.contacts-link {
+.mob-menu-contacts-list {
   display: flex;
+  flex-direction: column;
+  font-style: normal;
   gap: 40px;
 }
-
-.contacts .link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: inherit;
-  padding: 24px 0;
+.mob-tel-contacts-link {
+  color: var(--iris, #4d5ae5);
   display: block;
-  transition: color var(--transition-auto);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.mob-mail-contacts-link {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--pressed-color);
+.open-mob-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  place-self: center;
+  margin: 24px 0;
 }
-
-.under-line {
-  position: relative;
-  color: var(--pressed-color);
+.open-mob-icon {
+  stroke: var(--main-color);
 }
-
-.under-line::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--pressed-color);
-  bottom: -1px;
+.mob-menu-soc-list {
+  display: flex;
+  gap: 56px;
+  margin-bottom: 40px;
 }
 
 /*----------------------- hero -------------- */
@@ -344,7 +352,8 @@ img {
   gap: 24px;
   justify-content: center;
 }
-.team-soc-link {
+.team-soc-link,
+.mob-menu-soc-link {
   height: 40px;
   width: 40px;
   display: block;
@@ -361,12 +370,9 @@ img {
   background-color: var(--pressed-color);
   transition: background-color var(--transition-auto);
 }
-.team-soc-icon {
-  /* position: absolute; */
+.team-soc-icon,
+.mob-menu-soc-icon {
   fill: var(--light-color);
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
 }
 
 /* ------------------customers------------------- */
