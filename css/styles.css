@@ -97,6 +97,16 @@ img {
 }
 .mob-menu {
   padding-left: 40px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white-bg-color);
+  position: fixed;
+  top: 0;
+  transform: translateX(100%);
+  transition: translate var(--transition-auto);
+}
+.is-open {
+  transform: translateX(0);
 }
 .close-menu-btn {
   width: 24px;
@@ -112,6 +122,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-top: 80px;
   margin-bottom: 264px;
 }
 
@@ -138,10 +149,11 @@ img {
 .mob-tel-contacts-link {
   color: var(--iris, #4d5ae5);
   display: block;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+
+  letter-spacing: -1.3px;
   text-transform: capitalize;
 }
 .mob-mail-contacts-link {
@@ -162,10 +174,14 @@ img {
 .open-mob-icon {
   stroke: var(--main-color);
 }
+
 .mob-menu-soc-list {
   display: flex;
-  gap: 56px;
+  gap: 26px;
   margin-bottom: 40px;
+}
+.mob-menu-soc-icon {
+  fill: var(--light-color);
 }
 
 /*----------------------- hero -------------- */
@@ -594,7 +610,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-auto);
-  width: 408px;
+  min-width: 290px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -605,7 +621,8 @@ img {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-.close-btn {
+.close-btn,
+.close-menu-btn {
   width: 24px;
   height: 24px;
   background-color: var(--accent-color);

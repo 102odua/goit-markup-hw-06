@@ -6,6 +6,16 @@
   .footer-subscribe-frame {
     min-width: 396px;
   }
+  .mob-tel-contacts-link {
+    font-size: 36px;
+    letter-spacing: 0.72px;
+  }
+  .mob-menu-soc-list {
+    gap: 56px;
+  }
+  .modal {
+    width: 408px;
+  }
 }
 /* ----------------------------------------------------tab */
 @media screen and (min-width: 768px) {
@@ -177,11 +187,16 @@
 }
 /* ------------------------------------------Cross position */
 
-/* @media screen and (min-width: 319px) and (max-width: 767px) {
-  .customers-item:nth-child(n + 3) {
-    margin-top: 56px;
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .contacts-link {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
   }
-} */
+  .contacts .link {
+    padding: 0;
+  }
+}
 
 /* ------------------------------------------------Desctop */
 @media screen and (min-width: 1158px) {
@@ -300,6 +315,5 @@
   }
   .footer-subscribe-btn {
     min-width: 165px;
-    /* margin: 0; */
   }
 }
