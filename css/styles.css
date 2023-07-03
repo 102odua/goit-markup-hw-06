@@ -38,8 +38,7 @@ ul {
 }
 
 .container {
-  /* width: 1158px; */
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 img {
@@ -281,6 +280,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color);
   margin-bottom: 8px;
+  text-align: center;
 }
 .advtg-text {
   font-size: 16px;

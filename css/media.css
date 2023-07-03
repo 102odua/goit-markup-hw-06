@@ -1,6 +1,6 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 426px;
+    max-width: 428px;
   }
 
   .footer-subscribe-frame {
@@ -20,7 +20,7 @@
 /* ----------------------------------------------------tab */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 766px;
+    max-width: 768px;
   }
   .header-container {
     justify-content: unset;
@@ -66,7 +66,7 @@
   }
 
   .contacts .link {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: inherit;
@@ -136,6 +136,7 @@
   }
   .advtg-title {
     line-height: 1.11;
+    text-align: start;
   }
   .team-list {
     flex-direction: row;
@@ -202,6 +203,10 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
+  }
+  .contacts .link {
+    font-size: 16px;
   }
 
   .hero {
@@ -304,6 +309,7 @@
     text-align: start;
   }
   .footer-subscribe-frame {
+    margin-top: 0;
     gap: 0;
     flex-direction: row;
   }
